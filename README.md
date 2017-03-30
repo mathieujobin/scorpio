@@ -34,13 +34,13 @@ Scorpio's tests are a good place to read example code of an API
 
 The Blog service is defined in test/blog.rb. It uses ActiveRecord models and Sinatra to make a simple RESTful service.
 
-Its API is described in `test/blog_description.yml`, defining the Article resource, several methods (some of which are instance methods), and schemas.
+Its API is described in [test/blog_description.yml](test/blog_description.yml), defining the Article resource, several methods (some of which are instance methods), and schemas.
 
-The client is set up in `test/blog_scorpio_models.rb`. The base class BlogModel defines the base_url and the api description, as well as some other optional setup done for testing.
+The client is set up in [test/blog_scorpio_models.rb](test/blog_scorpio_models.rb). The base class BlogModel defines the base_url and the api description, as well as some other optional setup done for testing.
 
 The Article model inherits from BlogModel and is set with its resource name and the keys of its schema in the API description.
 
-Based on those, Article gets the methods of the API description which are tested in `test/scorpio_test.rb`.
+Based on those, Article gets the methods of the API description which are tested in [test/scorpio_test.rb](test/scorpio_test.rb).
 
 [This section will be fleshed out with more description and less just telling you, dear reader, to read the test code, as development progresses.]
 
